@@ -7,7 +7,7 @@ import java.util.Comparator;
 public class Libro {
 
     private ArrayList<String> nomiAutori;
-    private ArrayList<Utente> codaUtentiRichiedenti;
+    private ElencoUtenti codaUtentiRichiedenti;
     private String titolo;
     private String editore;
     private String ISBN;
@@ -19,7 +19,7 @@ public class Libro {
         this.titolo = titolo;
         this.editore = editore;
         this.ISBN = ISBN;
-        this.codaUtentiRichiedenti = new ArrayList<Utente>();
+        this.codaUtentiRichiedenti = new ElencoUtenti();
         this.inPrestito = false;
         this.utentePrestito = null;
     }
@@ -35,11 +35,11 @@ public class Libro {
         this.utentePrestito = utentePrestito;
     }
 
-    public ArrayList<Utente> getCodaUtentiRichiedenti() {
+    public ElencoUtenti getCodaUtentiRichiedenti() {
         return this.codaUtentiRichiedenti;
     }
 
-    public void setCodaUtentiRichiedenti(ArrayList<Utente> codaUtentiRichiedenti) {
+    public void setCodaUtentiRichiedenti(ElencoUtenti codaUtentiRichiedenti) {
         this.codaUtentiRichiedenti = codaUtentiRichiedenti;
     }
 
